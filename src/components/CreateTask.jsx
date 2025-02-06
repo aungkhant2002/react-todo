@@ -1,8 +1,8 @@
-import {useState} from "react";
+import {useContext, useState} from "react";
+import TaskContext from "../context/TaskContext.js";
 
-// eslint-disable-next-line react/prop-types
-const CreateTask = ({addNewTask})=> {
-
+const CreateTask = ()=> {
+    const {addNewTask} = useContext(TaskContext);
     const [job, setJob] = useState("");
     const handleOnChange = (event)=> {
         setJob(event.target.value)
