@@ -19,9 +19,9 @@ const CreateTask = ({addNewTask})=> {
     }
 
     return (
-        <section className="create-task flex mb-3 w-1/3">
-            <input type="text" value={job} placeholder="Write your new task" onChange={handleOnChange} className="border border-slate-300 focus:outline-0 rounded-l-lg p-2 flex-grow"/>
-            <button onClick={handleAddTaskBtn} className="border border-slate-300 bg-slate-300 rounded-r-lg px-4 py-2">Add Task</button>
+        <section className="create-task flex mb-3 w-full md:w-3/4 xl:w-1/3">
+            <input type="text" value={job} placeholder="Write your new task" onChange={handleOnChange} className="border border-slate-300 text-black focus:outline-0 rounded-l-lg p-2 flex-grow"/>
+            <button onClick={handleAddTaskBtn} className="border border-slate-200 bg-slate-200 rounded-r-lg px-4 py-2">Add Task</button>
         </section>
     )
 }
