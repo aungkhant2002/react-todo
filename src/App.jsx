@@ -7,13 +7,13 @@ const App = () => {
 
 
     return (
-        <TaskProvider>
+        // <TaskProvider>
             <section className="app p-10">
                 <Heading/>
                 <CreateTask/>
                 <TaskList/>
             </section>
-        </TaskProvider>
+        // </TaskProvider>
     )
 }
 

@@ -1,9 +1,9 @@
 import Swal from 'sweetalert2'
-import {useContext} from "react";
-import TaskContext from "../context/TaskContext.js";
+import useTaskStore from "../store/useTaskStore.js";
 // eslint-disable-next-line react/prop-types
 const Task = ({job: {id, task, isDone}}) => {
-    const {removeTask, doneTask} = useContext(TaskContext);
+    // const {removeTask, doneTask} = useContext(TaskContext);
+    const {removeTask, doneTask} = useTaskStore();
     const handleRemoveTaskBtn = () => {
         Swal.fire({
             title: "Are you sure?",
