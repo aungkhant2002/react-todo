@@ -1,3 +1,5 @@
+# ✅ To-Do App
+
 A simple and responsive To-Do application built using React.js, Tailwind CSS, Vite, and Zustand for state management.
 
 ## 🚀 Features
